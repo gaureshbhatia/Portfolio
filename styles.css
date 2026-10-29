@@ -200,9 +200,15 @@ mark { padding: 0 2px; background: linear-gradient(transparent 62%, #e1e9b9 62%)
 .note-card strong { color: var(--ink); }
 
 .course-list { border-top: 1px solid var(--line); }
-.course-item { padding: 28px 15px 31px 4%; display: grid; grid-template-columns: 65px 1fr 25px; gap: 15px; border-bottom: 1px solid var(--line); }
+.course-item { position: relative; padding: 28px 15px 31px 4%; display: grid; grid-template-columns: 65px 1fr 25px; gap: 15px; border-bottom: 1px solid var(--line); transition: transform .3s cubic-bezier(.34, 1.56, .64, 1), background-color .2s ease, box-shadow .2s ease; }
+.course-item:hover, .course-item:focus-within { z-index: 1; transform: translateY(-5px); background: var(--white); box-shadow: 0 8px 22px rgba(29,39,35,.08); }
 .course-index { padding-top: 3px; color: var(--green); font: 11px var(--mono); }
 .course-main h2 { margin: 8px 0 8px; font: 500 27px var(--serif); letter-spacing: -.02em; }
+.course-main h2 a { color: inherit; text-decoration: none; }
+.course-main h2 a::after { position: absolute; inset: 0; content: ""; }
+.course-main h2 a:hover { color: var(--green); }
+.course-main h2 a:focus-visible { outline: none; }
+.course-main h2 a:focus-visible::after { outline: 2px solid var(--green); outline-offset: 4px; }
 .course-description { max-width: 700px; margin-bottom: 17px; color: var(--muted); font-size: 13px; }
 .course-description strong { color: var(--ink); font-weight: 500; }
 .learning-points { max-width: 700px; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
@@ -210,6 +216,11 @@ mark { padding: 0 2px; background: linear-gradient(transparent 62%, #e1e9b9 62%)
 .learning-points p { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
 .course-mark { color: var(--green); font-size: 17px; }
 .template-note { margin: 22px 4% 0; color: var(--muted); font-size: 11px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .course-item { transition: none; }
+  .course-item:hover, .course-item:focus-within { transform: none; }
+}
 
 .writing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .writing-sample { min-width: 0; }
