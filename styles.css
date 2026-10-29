@@ -225,13 +225,13 @@ mark { padding: 0 2px; background: linear-gradient(transparent 62%, #e1e9b9 62%)
 .writing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .writing-sample { min-width: 0; }
 .writing-cover { position: relative; min-height: 350px; padding: 23px 25px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; color: var(--white); background: #365646; }
-.subject-cover { background: #a75136; }
+.poetry-cover { background: #a75136; }
 .cover-kicker { position: relative; z-index: 1; display: flex; justify-content: space-between; color: rgba(255,255,255,.82); }
 .cover-decoration { position: absolute; top: 20px; right: 24px; color: rgba(231,237,196,.17); font: 270px/.9 var(--serif); }
-.subject-decoration { top: 58px; right: 30px; font: 150px/.9 var(--serif); }
+.math-decoration { top: 58px; right: 30px; font: 150px/.9 var(--serif); }
 .cover-title { position: relative; z-index: 1; }
 .cover-title > span { color: var(--lime); }
-.subject-cover .cover-title > span { color: #f1c89d; }
+.poetry-cover .cover-title > span { color: #f1c89d; }
 .cover-title h2 { margin: 10px 0 0; font: 500 clamp(29px, 3vw, 40px)/1.12 var(--serif); letter-spacing: -.03em; }
 .cover-meta { position: relative; z-index: 1; padding-top: 15px; display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid rgba(255,255,255,.28); color: rgba(255,255,255,.69); font: 8px/1.6 var(--mono); letter-spacing: .08em; }
 .cover-meta strong { color: var(--white); font-size: 9px; font-weight: 400; }
