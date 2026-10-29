@@ -262,6 +262,8 @@ mark { padding: 0 2px; background: linear-gradient(transparent 62%, #e1e9b9 62%)
 .resume-tagline { margin: 0; color: var(--muted); font-size: 11px; }
 .resume-contact { display: flex; flex-direction: column; align-items: end; color: var(--muted); font-size: 10px; line-height: 1.8; }
 .resume-contact a { color: var(--green); text-decoration: none; }
+.resume-location { margin-bottom: 1em; }
+.resume-contact a span { margin-left: 3px; white-space: nowrap; }
 .resume-section { padding: 17px 0 15px; border-bottom: 1px solid var(--line); }
 .resume-section > h3 { margin: 0 0 11px; color: var(--green); font-weight: 500; }
 .resume-entry { display: flex; justify-content: space-between; gap: 18px; }
