@@ -84,20 +84,12 @@ a { color: inherit; }
   content: "";
 }
 
-.header-note, .eyebrow, .text-link, .section-label, .project-number, .detail-number, .project-tags, .learning-points span, .cover-kicker, .cover-title > span, .resume-section > h3, .resume-date, .sample-attachment {
+.eyebrow, .text-link, .section-label, .project-number, .detail-number, .project-tags, .learning-points span, .cover-kicker, .cover-title > span, .resume-section > h3, .resume-date, .sample-attachment {
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: .1em;
 }
 
-.header-note {
-  flex-shrink: 0;
-  color: var(--green);
-  font-size: 9px;
-  text-decoration: none;
-}
-
-.header-note span { padding-left: 5px; font-size: 13px; }
 .page-shell { width: min(1120px, 87.8%); margin-right: auto; margin-left: auto; }
 
 .hero {
@@ -288,7 +280,6 @@ mark { padding: 0 2px; background: linear-gradient(transparent 62%, #e1e9b9 62%)
   .site-header { padding: 14px 6%; flex-wrap: wrap; gap: 6px 20px; }
   .site-nav { order: 3; width: 100%; justify-content: space-between; gap: 12px; }
   .site-nav a { padding: 10px 0; font-size: 11px; }
-  .site-header .header-note { margin-left: auto; }
   .hero { min-height: 420px; gap: 5%; }
   .hero-copy { padding-left: 0; }
   .intro-section { padding-right: 0; padding-left: 0; }
@@ -302,7 +293,6 @@ mark { padding: 0 2px; background: linear-gradient(transparent 62%, #e1e9b9 62%)
   .wordmark { font-size: 9px; }
   .site-nav { overflow-x: auto; justify-content: flex-start; gap: 21px; }
   .site-nav a { flex-shrink: 0; font-size: 10px; }
-  .header-note { font-size: 8px; }
   .hero { padding-top: 53px; padding-bottom: 56px; grid-template-columns: 1fr; gap: 34px; }
   .hero h1 { font-size: clamp(43px, 11vw, 58px); }
   .hero-art, .hero-art img { min-height: 230px; height: 230px; }
